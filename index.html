@@ -37,7 +37,7 @@
     		align-self: center;
     	}
 		.striata-table-template {
-			margin-bottom: 25px;
+			margin-bottom: 10px;
 		}
     	.striata-table-template tr td {
     		text-align: center;
@@ -59,7 +59,11 @@
     		background-color: #A9A9A9;
     		text-transform: uppercase;
     		color: #000000;
-    		padding: 3px;
+    		padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-weight: bold;
     	}
 		img {
 			width: 100%;
@@ -76,6 +80,10 @@
 			border-radius: 20px; text-align: center;
 			padding-top: 20px;
 			padding-bottom: 20px;
+		}
+		.footer-social-icon {
+			max-width: 25px;
+			max-height: 25px;
 		}
 
     </style>
@@ -103,7 +111,7 @@
 					imperdiet ligula. Donec malesuada
 					vehicula ullamcorper.
 				</p>
-				<a class="button-link" href="https:www.striata.com/cta1" title="Link to CTA 1">cta &nbsp;&gt;</a>
+				<a class="button-link" href="https:www.striata.com/cta1" title="Link to CTA 1">cta &nbsp;&nbsp;&gt;</a>
 			</td>
 			<td class="table-second-col">
 				<img src="placeholder-image.png">
@@ -128,7 +136,7 @@
 					imperdiet ligula. Donec malesuada
 					vehicula ullamcorper.
 				</p>
-				<a class="button-link" href="https:www.striata.com/cta2" title="Link to CTA 2">cta &nbsp;&gt;</a>
+				<a class="button-link" href="https:www.striata.com/cta2" title="Link to CTA 2">cta &nbsp;&nbsp;&gt;</a>
 			</td>
 		</tr>
 	</table>
@@ -147,7 +155,7 @@
 					imperdiet ligula. Donec malesuada
 					vehicula ullamcorper.
 				</p>
-				<a class="button-link" href="https:www.striata.com/cta2" title="Link to CTA 3">cta &nbsp;&gt;</a>
+				<a class="button-link" href="https:www.striata.com/cta2" title="Link to CTA 3">cta &nbsp;&nbsp;&gt;</a>
 			</td>
 			<td class="table-second-col rounded-col">
 				<img src="placeholder-image.png">
@@ -207,8 +215,29 @@
 	
 	<footer>
 		<h1 id="footer-heading">footer</h1>
+		<p>
+			Cras condimentum pellentesque libero, ac eleifend ante. Praesent malesuada fringilla sem
+			eget cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante
+			ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+		</p>
 		<table id="footer-table" class="striata-table-template"  width="100%">
-
+			<tr id="social-icons-row">
+				<td>
+					<center>
+						<img class="footer-social-icon" src="facebookIcon.png" width="25" height= "25" alt="facebook icon">
+					</center>
+				</td>
+				<td>
+					<center>
+						<img class="footer-social-icon"  src="twitterIcon.png" width="25" height= "25" alt="twitter icon">
+					</center>
+				</td>
+				<td>
+					<center>
+						<img class="footer-social-icon" src="linkedInIcon.png" width="25" height= "25" alt="linkedInIcon icon">
+					</center>
+				</td>
+			</tr>
 		</table>
 	</footer>
 </body>
