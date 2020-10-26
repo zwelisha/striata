@@ -11,7 +11,7 @@
 			font-family: Arial, Helvetica, sans-serif;
 			font-size: 14px;
     	}
-		/* The class container helps to center the content  and make it responsive on all devices*/
+		/* The container helps to center the content  and make it responsive on all devices*/
 		.container {
 			padding-right: 15px;
 			padding-left: 15px;
@@ -43,10 +43,10 @@
 		}
     	.striata-table-template tr td {
     		text-align: center;
-			height: 190px;
-			width: 190px;
+			height: 195px;
+			width: 195px;
     	}
-    	.content-col {
+    	.grey-bg-col {
     		background-color: #D3D3D3;
     	}
 	
@@ -59,11 +59,11 @@
     		background-color: #A9A9A9;
     		text-transform: uppercase;
     		color: #000000;
-    		padding-left: 50px;
-			padding-right: 50px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			font-weight: bold;
+    		padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			margin-top: 15px;
     	}
 		img {
 			width: 100%;
@@ -78,18 +78,30 @@
 			font-size: 12px;
 		}
 		/* Footer */
+		footer {
+			padding-bottom: 15px;
+		}
 		#footer-heading {
 			text-transform: uppercase;
-			background-color: #A9A9A9;
-			border-radius: 20px; text-align: center;
-			padding-top: 20px;
-			padding-bottom: 20px;
+			background-color: #D3D3D3;
+			border-radius: 10px; text-align: center;
+			padding-top: 15px;
+			padding-bottom: 15px;
 		}
 		.footer-social-icon {
 			max-width: 25px;
 			max-height: 25px;
 		}
-
+		.social-icons {
+			margin: 0 auto;
+		}
+		.social-icons li {
+			width: 50px;
+			list-style-type: none;
+			display: inline-block;
+		}
+		
+			
     </style>
 </head>
 <body class="container"> 
@@ -105,7 +117,7 @@
 
 	<table id="table1" class="striata-table-template"  width="100%" cellspacing="10">
 		<tr>
-			<td class="table-first-col content-col">
+			<td class="table-first-col grey-bg-col">
 				<h4 class="content-header">header</h4>
 				<p>
 					Praesent malesuada fringilla sem
@@ -120,14 +132,14 @@
 				<a class="button-link" href="https:www.striata.com/cta1" title="Link to CTA 1">cta &nbsp;&nbsp;&gt;</a>
 			</td>
 			<td class="table-second-col">
-				<img src="placeholder-image.png">
+				<img src="placeholder-image.png" width="195" height="195">
 			</td>
 		</tr>
 		<tr> 
 			<td class="table-first-col">
-				<img src="placeholder-image.png">
+				<img src="placeholder-image.png" width="195" height="195">
 			</td>
-			<td class="table-second-col content-col">
+			<td class="table-second-col grey-bg-col">
 				<h4 class="content-header">header</h4>
 				<p>
 					Praesent malesuada fringilla sem
@@ -143,7 +155,7 @@
 			</td>
 		</tr>
 		<tr> 
-			<td class="table-first-col content-col rounded-col">
+			<td class="table-first-col rounded-col">
 				<h4 class="content-header">header</h4>
 				<p>
 					Praesent malesuada fringilla sem
@@ -158,7 +170,7 @@
 				<a class="button-link" href="https:www.striata.com/cta3" title="Link to CTA 3">cta &nbsp;&nbsp;&gt;</a>
 			</td>
 			<td class="table-second-col">
-				<img class="rounded-img" src="placeholder-image.png">
+				<img class="rounded-img" src="placeholder-image.png" width="195" height="195">
 			</td>
 		</tr>
 
@@ -220,31 +232,27 @@
 			eget cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante
 			ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 		</p>
-		<table id="footer-table" class="striata-table-template"  width="100%">
-			<tr id="social-icons-row">
-				<td>
-					<center>
-						<a href="https://www.facebook.com/striata.digital/" target="_blank">
-							<img class="footer-social-icon" src="facebookIcon.png" width="25" height= "25" alt="facebook icon">
-						</a>
-					</center>
-				</td>
-				<td>
-					<center>
-						<a href="https://twitter.com/Striata" target="_blank">
-							<img class="footer-social-icon"  src="twitterIcon.png" width="25" height= "25" alt="twitter icon">
-						</a>
-					</center>
-				</td>
-				<td>
-					<center>
-						<a href="https://www.linkedin.com/company/striata" target="_blank">
-							<img class="footer-social-icon" src="linkedInIcon.png" width="25" height= "25" alt="linkedInIcon icon">
-						</a>
-					</center>
-				</td>
-			</tr>
-		</table>
+		
+		<!-- This is a technical debt, the center tag is outdated in HTML5 but it works. In an actual campaign I would center using CSS3-->
+		<center>
+			<ul class="social-icons">
+				<li>
+					<a href="https://www.facebook.com/striata.digital/" target="_blank">
+						<img class="footer-social-icon" src="facebookIcon.png" width="25" height= "25" alt="facebook icon">
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/Striata" target="_blank">
+						<img class="footer-social-icon"  src="twitterIcon.png" width="25" height= "25" alt="twitter icon">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/company/striata" target="_blank">
+						<img class="footer-social-icon" src="linkedInIcon.png" width="25" height= "25" alt="linkedInIcon icon">
+					</a>
+				</li>
+			</ul>
+		</center>
 	</footer>
 </body>
 </html>
