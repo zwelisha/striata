@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Striata Campaign Template</title>
     <style type="text/css">
     	body {
     		max-width: 600px;
     		max-height: 650px;
 			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
     	}
 		/* The class container helps to center the content  and make it responsive on all devices*/
 		.container {
@@ -42,15 +43,13 @@
 		}
     	.striata-table-template tr td {
     		text-align: center;
-			height: 270px;
-			width: 200px;
+			height: 190px;
+			width: 190px;
     	}
     	.content-col {
     		background-color: #D3D3D3;
     	}
-		.table-first-col{
-			padding-right: 20px;
-		}
+	
 		.rounded-col{
 			border: 2px solid #A9A9A9;
 			border-radius: 10px;
@@ -73,6 +72,7 @@
 		}
 		p {
 			text-align: center;
+			font-size: 12px;
 		}
 		/* Footer */
 		#footer-heading {
@@ -91,17 +91,19 @@
 </head>
 <body class="container"> 
 
-	<img src="banner.png" alt="striata banner" height="250" alt="striata banner">
-	 <p>
-	 	Cras condimentum pellentesque libero, ac eleifend ante. Praesent malesuada fringilla sem
-		eget cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante
-		ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
-	 </p>
+	<header>
+		<img src="banner.png" alt="striata banner" height="250" alt="striata banner">
+		<p>
+			Cras condimentum pellentesque libero, ac eleifend ante. Praesent malesuada fringilla sem
+			eget cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante
+			ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+		</p>
+	</header>
 
-	<table id="table1" class="striata-table-template"  width="100%" cellspacing="5">
+	<table id="table1" class="striata-table-template"  width="100%" cellspacing="10">
 		<tr>
-			<td class="table-first-col content-col" style="padding-left:20px;">
-				<h1 class="content-header">header</h1>
+			<td class="table-first-col content-col">
+				<h4 class="content-header">header</h4>
 				<p>
 					Praesent malesuada fringilla sem
 					eget cursus. Ut dolor magna, eleifend
@@ -123,7 +125,7 @@
 				<img src="placeholder-image.png">
 			</td>
 			<td class="table-second-col content-col">
-				<h1 class="content-header">header</h1>
+				<h4 class="content-header">header</h4>
 				<p>
 					Praesent malesuada fringilla sem
 					eget cursus. Ut dolor magna, eleifend
@@ -139,7 +141,7 @@
 		</tr>
 		<tr> 
 			<td class="table-first-col content-col rounded-col">
-				<h1 class="content-header">header</h1>
+				<h4 class="content-header">header</h4>
 				<p>
 					Praesent malesuada fringilla sem
 					eget cursus. Ut dolor magna, eleifend
@@ -152,8 +154,8 @@
 				</p>
 				<a class="button-link" href="https:www.striata.com/cta3" title="Link to CTA 3">cta &nbsp;&nbsp;&gt;</a>
 			</td>
-			<td class="table-second-col rounded-col">
-				<img src="placeholder-image.png">
+			<td class="table-second-col">
+				<img class="rounded-img" src="placeholder-image.png">
 			</td>
 		</tr>
 
@@ -209,7 +211,7 @@
 	</table>
 	
 	<footer>
-		<h1 id="footer-heading">footer</h1>
+		<h3 id="footer-heading">footer</h3>
 		<p>
 			Cras condimentum pellentesque libero, ac eleifend ante. Praesent malesuada fringilla sem
 			eget cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante
